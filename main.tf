@@ -8,8 +8,7 @@ terraform {
 }
 
 variable "num" {
-  default = 1
-  type    = number
+  type = number
 }
 
 resource "null_resource" "resource" {
