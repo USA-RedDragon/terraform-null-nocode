@@ -12,18 +12,11 @@ variable "num" {
 }
 
 variable "numnum" {
-  type = number
+  type = string
 }
 
 resource "null_resource" "resource" {
   count = var.num
-  triggers = {
-    always = timestamp()
-  }
-}
-
-resource "null_resource" "resource2" {
-  count = var.numnum
   triggers = {
     always = timestamp()
   }
