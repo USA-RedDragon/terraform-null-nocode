@@ -11,7 +11,7 @@ variable "num" {
   type = number
 }
 
-variable "numnum" {
+variable "newthing" {
   type = string
 }
 
