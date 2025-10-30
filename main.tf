@@ -19,6 +19,10 @@ output "newthing" {
   value = var.newthing
 }
 
+output "newthing_two" {
+  value = var.newthing
+}
+
 resource "null_resource" "resource" {
   count = var.num
   triggers = {
