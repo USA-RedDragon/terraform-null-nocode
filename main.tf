@@ -29,3 +29,12 @@ resource "null_resource" "resource" {
     always = timestamp()
   }
 }
+
+module "greeting" {
+  source = "git::https://github.com/USA-RedDragon/terraform-null-nocode.git//modules/greeting?ref=v1.0.0"
+  name   = var.newthing
+}
+
+output "greeting" {
+  value = module.greeting.greeting
+}
